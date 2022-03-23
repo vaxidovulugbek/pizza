@@ -1,6 +1,8 @@
 const menuList = document.querySelector(".menu__list");
 const cartList = document.querySelector(".cart__list");
 const subtotal = document.querySelector(".subtotal");
+const tax = document.querySelector(".tax")
+const eltotal = document.querySelector(".total")
 let newPizzaArray = [];
 let total = 0;
 
@@ -75,6 +77,8 @@ function addCart(cartPizzaArray) {
   });
 
   subtotal.innerHTML = total.toFixed(2);
+  tax.innerHTML = ((total * 10) / 100).toFixed(2)
+  eltotal.textContent = (eval( subtotal.innerHTML) + eval( tax.innerHTML)).toFixed(2)
 }
 
 function remove(elId) {
