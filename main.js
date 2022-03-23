@@ -23,10 +23,4 @@ const pizzaArray = [
     price: 9.32,
     imgUrl: "https://www.gastronom.ru/binfiles/images/20191113/bd570867.jpg",
   },
-  {
-    id: 5,
-    name: "Java",
-    price: 5,
-    imgUrl: "https://st.depositphotos.com/1003814/5052/i/950/depositphotos_50523105-stock-photo-pizza-with-tomatoes.jpg",
-  },
 ];
